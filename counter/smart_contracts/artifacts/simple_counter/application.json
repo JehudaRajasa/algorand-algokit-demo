@@ -1,0 +1,67 @@
+{
+    "hints": {
+        "increment_global()uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "decrement_global()uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMQpieXRlY2Jsb2NrIDB4NjM2Zjc1NmU3NDY1NzI1ZjY3NmM2ZjYyNjE2YyAweDE1MWY3Yzc1CnR4biBOdW1BcHBBcmdzCmludGNfMCAvLyAwCj09CmJueiBtYWluX2w2CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4MTEzMDA1N2EgLy8gImluY3JlbWVudF9nbG9iYWwoKXVpbnQ2NCIKPT0KYm56IG1haW5fbDUKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMApwdXNoYnl0ZXMgMHg2ZjEwODEwMiAvLyAiZGVjcmVtZW50X2dsb2JhbCgpdWludDY0Igo9PQpibnogbWFpbl9sNAplcnIKbWFpbl9sNDoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiBkZWNyZW1lbnRnbG9iYWxjYXN0ZXJfMwppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNToKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiBpbmNyZW1lbnRnbG9iYWxjYXN0ZXJfMgppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNjoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQpibnogbWFpbl9sOAplcnIKbWFpbl9sODoKdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18wIC8vIDAKPT0KYXNzZXJ0CmludGNfMSAvLyAxCnJldHVybgoKLy8gaW5jcmVtZW50X2dsb2JhbAppbmNyZW1lbnRnbG9iYWxfMDoKcHJvdG8gMCAxCmludGNfMCAvLyAwCmJ5dGVjXzAgLy8gImNvdW50ZXJfZ2xvYmFsIgpieXRlY18wIC8vICJjb3VudGVyX2dsb2JhbCIKYXBwX2dsb2JhbF9nZXQKaW50Y18xIC8vIDEKKwphcHBfZ2xvYmFsX3B1dApieXRlY18wIC8vICJjb3VudGVyX2dsb2JhbCIKYXBwX2dsb2JhbF9nZXQKZnJhbWVfYnVyeSAwCnJldHN1YgoKLy8gZGVjcmVtZW50X2dsb2JhbApkZWNyZW1lbnRnbG9iYWxfMToKcHJvdG8gMCAxCmludGNfMCAvLyAwCmJ5dGVjXzAgLy8gImNvdW50ZXJfZ2xvYmFsIgpieXRlY18wIC8vICJjb3VudGVyX2dsb2JhbCIKYXBwX2dsb2JhbF9nZXQKaW50Y18xIC8vIDEKLQphcHBfZ2xvYmFsX3B1dApieXRlY18wIC8vICJjb3VudGVyX2dsb2JhbCIKYXBwX2dsb2JhbF9nZXQKZnJhbWVfYnVyeSAwCnJldHN1YgoKLy8gaW5jcmVtZW50X2dsb2JhbF9jYXN0ZXIKaW5jcmVtZW50Z2xvYmFsY2FzdGVyXzI6CnByb3RvIDAgMAppbnRjXzAgLy8gMApjYWxsc3ViIGluY3JlbWVudGdsb2JhbF8wCmZyYW1lX2J1cnkgMApieXRlY18xIC8vIDB4MTUxZjdjNzUKZnJhbWVfZGlnIDAKaXRvYgpjb25jYXQKbG9nCnJldHN1YgoKLy8gZGVjcmVtZW50X2dsb2JhbF9jYXN0ZXIKZGVjcmVtZW50Z2xvYmFsY2FzdGVyXzM6CnByb3RvIDAgMAppbnRjXzAgLy8gMApjYWxsc3ViIGRlY3JlbWVudGdsb2JhbF8xCmZyYW1lX2J1cnkgMApieXRlY18xIC8vIDB4MTUxZjdjNzUKZnJhbWVfZGlnIDAKaXRvYgpjb25jYXQKbG9nCnJldHN1Yg==",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 1
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "counter_global": {
+                    "type": "uint64",
+                    "key": "counter_global",
+                    "descr": ""
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "simple_counter",
+        "methods": [
+            {
+                "name": "increment_global",
+                "args": [],
+                "returns": {
+                    "type": "uint64"
+                }
+            },
+            {
+                "name": "decrement_global",
+                "args": [],
+                "returns": {
+                    "type": "uint64"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}

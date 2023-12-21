@@ -1,0 +1,109 @@
+#pragma version 8
+intcblock 0 1
+bytecblock 0x636f756e7465725f676c6f62616c 0x151f7c75
+txn NumAppArgs
+intc_0 // 0
+==
+bnz main_l6
+txna ApplicationArgs 0
+pushbytes 0x1130057a // "increment_global()uint64"
+==
+bnz main_l5
+txna ApplicationArgs 0
+pushbytes 0x6f108102 // "decrement_global()uint64"
+==
+bnz main_l4
+err
+main_l4:
+txn OnCompletion
+intc_0 // NoOp
+==
+txn ApplicationID
+intc_0 // 0
+!=
+&&
+assert
+callsub decrementglobalcaster_3
+intc_1 // 1
+return
+main_l5:
+txn OnCompletion
+intc_0 // NoOp
+==
+txn ApplicationID
+intc_0 // 0
+!=
+&&
+assert
+callsub incrementglobalcaster_2
+intc_1 // 1
+return
+main_l6:
+txn OnCompletion
+intc_0 // NoOp
+==
+bnz main_l8
+err
+main_l8:
+txn ApplicationID
+intc_0 // 0
+==
+assert
+intc_1 // 1
+return
+
+// increment_global
+incrementglobal_0:
+proto 0 1
+intc_0 // 0
+bytec_0 // "counter_global"
+bytec_0 // "counter_global"
+app_global_get
+intc_1 // 1
++
+app_global_put
+bytec_0 // "counter_global"
+app_global_get
+frame_bury 0
+retsub
+
+// decrement_global
+decrementglobal_1:
+proto 0 1
+intc_0 // 0
+bytec_0 // "counter_global"
+bytec_0 // "counter_global"
+app_global_get
+intc_1 // 1
+-
+app_global_put
+bytec_0 // "counter_global"
+app_global_get
+frame_bury 0
+retsub
+
+// increment_global_caster
+incrementglobalcaster_2:
+proto 0 0
+intc_0 // 0
+callsub incrementglobal_0
+frame_bury 0
+bytec_1 // 0x151f7c75
+frame_dig 0
+itob
+concat
+log
+retsub
+
+// decrement_global_caster
+decrementglobalcaster_3:
+proto 0 0
+intc_0 // 0
+callsub decrementglobal_1
+frame_bury 0
+bytec_1 // 0x151f7c75
+frame_dig 0
+itob
+concat
+log
+retsub

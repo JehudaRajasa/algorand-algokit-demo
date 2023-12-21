@@ -1,0 +1,1 @@
+This repo contains lessons from [Kecerdasan Digital Lanjutan: Unveiling Decentralized And Digital Economy with Algorand](https://kecerdasandigital.id/home/course/kecerdasan-digital-lanjutan-unveiling-decentralized-and-digital-economy-with-algorand/23) course by Universitas Gadjah Mada's CfDS and Algorand.

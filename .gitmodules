@@ -1,0 +1,3 @@
+[submodule "cds-algorand-course"]
+	path = cds-algorand-course
+	url = https://github.com/Algo-Hub-io/cds-algorand-course
